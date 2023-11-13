@@ -1,0 +1,179 @@
+:root {
+  --primary: #1f3e72;
+  --secondary: rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%);
+  --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%);
+  --blue: #4066ff;
+  --lightBlue: #eeeeff;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.primaryText {
+  color: #1f3e72;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+.orangeText {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+/*  */
+
+.sale h1 {
+  text-align: start;
+  color: #ff922d;
+}
+.sale h2 {
+  color: var(--primary);
+}
+
+.sale-houses {
+  width: 80%;
+  height: auto;
+  display: flex;
+  gap: 30px;
+  margin-left: 120px;
+}
+.div {
+  width: 50%;
+  height: auto;
+}
+.div img {
+  margin-top: 20px;
+  width: 100%;
+}
+.div img:hover {
+  scale: 1.025;
+  cursor: pointer;
+}
+#price {
+  color: #ff922d;
+  margin-bottom: 13px;
+  margin-left: 80px;
+  transition: color 0.3s;
+}
+.para:hover {
+  color: #ff5722;
+  transition: color 0.3s;
+}
+.location {
+  color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 70px;
+  flex-wrap: wrap;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+.location:hover {
+  color: #2196f3;
+}
+.details:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+.details {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.para {
+  cursor: pointer;
+}
+/* Media Quries */
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768 pixels (typically for mobile) */
+  .sale-houses {
+    border: 2px solid black;
+    display: block;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+  .sale-houses img {
+    width: 300px;
+  }
+  .sale-houses .details {
+    width: 300px;
+  }
+}
